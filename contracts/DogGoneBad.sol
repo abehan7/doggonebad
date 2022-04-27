@@ -26,8 +26,8 @@ contract DogGoneBad is ERC721, ERC2981, Ownable {
 
     // contract that can withdraw and use public funds
     address public publicFundHandler;
-    uint256 public creatorFee = 1000; // 1000 is 10%
-    uint256 public royaltyFee = 250; // 250 is 2.5%;
+    uint256 public creatorFee = 1000; // 1000 is 10% // creators rewards of total deposit of this contract
+    uint256 public royaltyFee = 250; // 250 is 2.5%; // royalty that if users who sell in opensea or market place, the nft's 2.5% will be sent to this contract.
 
     // Minting information
     uint256 public mintPrice = 1 * 10 ** 18;  // start from 1 KLAY
